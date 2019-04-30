@@ -28,7 +28,7 @@
 
    <!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
+	<link rel="shortcut icon" href="images/mee.png" >
 
 </head>
 
@@ -39,17 +39,14 @@
    <header id="home">
 
       <nav id="nav-wrap">
-
          <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
 	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
          <ul id="nav" class="nav">
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
             <li><a class="smoothscroll" href="#about">About</a></li>
 	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
             <li><a class="smoothscroll" href="#portfolio">Works</a></li>
-      
-            
+
          </ul> <!-- end #nav -->
 
       </nav> <!-- end #nav-wrap -->
@@ -57,7 +54,7 @@
       <div class="row banner">
          <div class="banner-text">
             <h1 class="responsive-headline" >I'm <span style="color: #FD28A0">Angela</span> <span style="color: #0C8A9D">Jones</span></h1>
-            <h3 style="color: white" >I'm a <strong> <span>graphic designer</span>  </strong>, <strong> <span>illustrator</span> </strong> and <strong> <span>webdesigner</span> </strong> creating awesome and
+            <h3 style="color: white; background-color: rgba(0, 0, 0, 0.3);" >I'm a <strong> <span>graphic designer</span>  </strong>, <strong> <span>illustrator</span> </strong> and <strong> <span>webdesigner</span> </strong> creating awesome and
             effective visual identities for companies of all sizes around the globe. Let's <a class="smoothscroll" href="#about">start scrolling</a>
             and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
             <hr />
@@ -284,9 +281,9 @@
             <h1>Check Out Some of My Works or  <a href="game">Click Here</a> to see my Front-End Game</h1>
 
             <!-- portfolio-wrapper -->
-            <div onClick="loadWorks();"  id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+            <div  id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
 
-          	   <div  class="columns portfolio-item">
+          	   <div onClick="loadFood();" class="columns portfolio-item">
                   <div class="item-wrap">
 
                      <a href="works.html" target="_blank">
@@ -303,7 +300,7 @@
                   </div>
           		</div> <!-- item end -->
 
-               <div class="columns portfolio-item">
+               <div onClick="loadLimo();" class="columns portfolio-item">
                   <div class="item-wrap">
                      <a href="works.html" title="">
                         <img alt="" src="images/portfolio/img2.png">
@@ -321,7 +318,7 @@
                   </div>
           		</div> <!-- item end -->
 
-               <div class="columns portfolio-item">
+               <div onClick="loadWire();" class="columns portfolio-item">
                   <div class="item-wrap">
 
                      <a href="works.html" title="">
@@ -338,7 +335,7 @@
                   </div>
           		</div> <!-- item end -->
 
-               <div class="columns portfolio-item">
+               <div onClick="loadNonProfit();" class="columns portfolio-item">
                   <div class="item-wrap">
 
                      <a href="works.html" title="">
@@ -563,6 +560,18 @@
    <script type="text/javascript">
      function loadWorks(){
       window.location.href = "works.html";
+     }
+     function loadFood(){
+        window.location.href = "food.html"
+     }
+     function loadLimo(){
+        window.location.href = "limo.html"
+     }
+     function loadWire(){
+        window.location.href = "wireframe.html"
+     }
+     function loadNonProfit(){
+        window.location.href = "nonprofit.html"
      }
 
    </script>
