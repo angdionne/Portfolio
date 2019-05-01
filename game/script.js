@@ -13,7 +13,6 @@ function game()
   while(!name)
   {
 	  name = prompt("Enter your name");
-	  
   }
   console.log("Select difficulty : type 1). Easy | 2). Medium | 3). High");
   //Check if difficulty value is correctly entered
@@ -31,9 +30,12 @@ function game()
   while(choice == 0)
   {
 	choice = prompt("Enter 1 to re-play / 2 to exit");	  
+	if(choice == 1){
+		replay(); 
+	}
   }
- 
-  
+	
+  close();
 
 }
 //Function to display results
@@ -228,5 +230,11 @@ function askQuestion(counter,difficulty,opertors)
 	}
 	//compare user answer with actual answer and return true or false
 	return compareAns(realans,userAns);
+}
+function close(){ 
+				window.location.href = "../#portfolio";
+}
+function replay(){
+	game();
 }
 game();
